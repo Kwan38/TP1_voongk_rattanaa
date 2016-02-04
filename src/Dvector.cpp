@@ -4,6 +4,7 @@
 
 #include "Dvector.h"
 #include <iostream>
+#include <cstdlib>
 
 /* ===== CONSTRUCTORS ===== */
 
@@ -50,5 +51,14 @@ Dvector::Dvector(const Dvector & D) {
 void Dvector::display(std::ostream &str) {
     for (int i = 0; i < taille ; i++) {
         str<<pTab[i]<<std::endl;
+    }
+}
+
+void Dvector::fillRandomly(){
+    double valeurAleatoire = 0;
+    srand(time(NULL));
+    for (int i = 0; i < taille; i ++){
+        valeurAleatoire = rand();
+        pTab[i] = valeurAleatoire;
     }
 }
