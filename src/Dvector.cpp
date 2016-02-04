@@ -4,6 +4,7 @@
 
 #include "Dvector.h"
 #include <iostream>
+#include <cstdlib>
 
 //Demander au prof pour le caractere optionnel de init
 Dvector::Dvector(int size, double init) {
@@ -30,6 +31,10 @@ void Dvector::display(std::ostream &str) {
 }
 
 void Dvector::fillRandomly(){
-
-
+    double valeurAleatoire = 0;
+    srand(time(NULL));
+    for (int i = 0; i < taille; i ++){
+        valeurAleatoire = rand();
+        pTab[i] = valeurAleatoire;
+    }
 }

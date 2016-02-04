@@ -23,7 +23,7 @@ class Dvector {
         /*  */
         Dvector(int size, double init = 0);
         ~Dvector();
-        Dvector(const Dvector & D)
+        Dvector(const Dvector & D);
 
     /* Methods */
     void display(std::ostream& str);
