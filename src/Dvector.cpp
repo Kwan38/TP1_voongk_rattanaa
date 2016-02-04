@@ -28,3 +28,8 @@ void Dvector::display(std::ostream &str) {
         str<<pTab[i]<<std::endl;
     }
 }
+
+void Dvector::fillRandomly(){
+
+
+}
