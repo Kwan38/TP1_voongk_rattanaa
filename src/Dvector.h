@@ -20,9 +20,11 @@ class Dvector {
     /* Constructors */
         /* Default constructor */
         Dvector();
-        /*  */
+        /* Constructor with size and implicit initialisation */
         Dvector(int size, double init = 0);
+        /* Deleter */
         ~Dvector();
+        /* Constructor by paste */
         Dvector(const Dvector & D);
 
     /* Methods */
