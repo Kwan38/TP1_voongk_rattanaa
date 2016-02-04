@@ -38,3 +38,7 @@ void Dvector::fillRandomly(){
         pTab[i] = valeurAleatoire;
     }
 }
+
+int Dvector::size(){
+    return taille;
+}

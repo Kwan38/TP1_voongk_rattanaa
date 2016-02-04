@@ -28,6 +28,7 @@ class Dvector {
     /* Methods */
     void display(std::ostream& str);
     void fillRandomly();
+    int size();
 };
 
 
