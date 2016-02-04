@@ -58,7 +58,7 @@ void Dvector::fillRandomly(){
     double valeurAleatoire = 0;
     srand(time(NULL));
     for (int i = 0; i < taille; i ++){
-        valeurAleatoire = rand();
+        valeurAleatoire = ((double) rand() / (RAND_MAX));;
         pTab[i] = valeurAleatoire;
     }
 }
