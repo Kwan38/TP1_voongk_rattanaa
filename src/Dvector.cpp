@@ -53,7 +53,7 @@ Dvector::Dvector(const Dvector & D) {
 Dvector::Dvector( std::string monString){
     std::ifstream fichier;//(std::string, ios::in);//on ouvre le fichier en lecture
     fichier.open(monString.c_str(),ifstream::in);
-;    if(fichier){
+    if(fichier.is_open()){
         //Récuperer le nombre de ligne pour initialiser la taille du tableau
         int nombreLigne = 0; // on va garder en mémoire le nombre de ligne du fichier pour ensuite avoir la taille du vecteur
         string s;  // déclaration d'une chaîne qui contiendra la ligne lue
