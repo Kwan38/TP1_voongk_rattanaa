@@ -19,6 +19,7 @@ using namespace std;
 
 /* --- Constructor with size and implicit initialisation --- */
 Dvector::Dvector(int size, double init) {
+    cout<<"On entre dans le constructeur de Dvector avec paramètres taille et initialisation implicite"<<endl;
     taille = size;
     if (taille == 0){
         return ;
@@ -28,21 +29,27 @@ Dvector::Dvector(int size, double init) {
     for (int i = 0; i < size ; i++) {
         pTab[i] = init;
     }
+    cout<<"On sort du constructeur de Dvector avec paramètres taille et initialisation implicite"<<endl;
 }
 
 /* --- Default constructor --- */
 Dvector::Dvector() {
+    cout<<"On entre dans le constructeur par défaut de Dvector"<<endl;
     taille = 0;
     pTab = new double[taille];
+    cout<<"On sort du constructeur par défaut de Dvector"<<endl;
 }
 
 /* --- Deleter --- */
 Dvector::~Dvector() {
+    cout<<"On entre dans le destructeur de Dvector "<<endl;
     delete [] pTab;
+    cout<<"On sort du destructeur de Dvector "<<endl;
 }
 
 /* --- Constructor by paste --- */
 Dvector::Dvector(const Dvector & D) {
+    cout<<"On entre dans le constructeur par copie de Dvector "<<endl;
     taille = D.taille;
     if (taille == 0){
         return ;
@@ -52,11 +59,12 @@ Dvector::Dvector(const Dvector & D) {
     for (int i = 0; i < taille ; i++) {
         pTab[i] = D.pTab[i];
     }
-
+    cout<<"On sort du constructeur par copie de Dvector "<<endl;
 }
 
 /* --- Constructor by parsing a file --- */
 Dvector::Dvector( std::string inputFile){
+    cout<<"On entre dans le constructeur de Dvector avec paramètre un fichier en lecture"<<endl;
     std::ifstream fichier;//(std::string, ios::in);//on ouvre le fichier en lecture
     fichier.open(inputFile.c_str(),ifstream::in);
     if(fichier.is_open()){
@@ -83,7 +91,7 @@ Dvector::Dvector( std::string inputFile){
     }else{
         taille = 0;
     }
-
+    cout<<"On sort du constructeur de Dvector avec paramètre un fichier en lecture"<<endl;
 }
 /* ==== METHODS ====*/
 
