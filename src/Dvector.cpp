@@ -1,6 +1,3 @@
-//
-// Created by Kwan Voong on 03/02/2016.
-//
 
 #include "Dvector.h"
 #include <iostream>
@@ -8,6 +5,15 @@
 #include <fstream>
 #include <string>
 using namespace std;
+
+
+/*!
+ * \file Dvector.cpp
+ * \brief Implémentation des méthodes et constructeurs de Dvector.h
+ * \author voongk-rattanaa
+ *
+ */
+
 
 /* ===== CONSTRUCTORS ===== */
 
