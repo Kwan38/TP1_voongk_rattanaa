@@ -1,0 +1,13 @@
+Question 1 :
+
+Méthode1:
+Dvector x;
+x = Dvector(3,1.);
+
+Méthode2:
+Dvector x = Dvector(3,1.);
+
+La méthode 1 pour déclarer un nouvel objet alloue en fait deux espaces mémoire différents.
+Alors à l'éxécution du test test_q1.t, on aura une exception levée sur l'assertion de l'affichage du vecteur puisque
+l'on affiche en fait le premier x déclaré à savoir un vecteur vide.
+A l'inverse, la méthode 2 alloue bien un seul espace mémoire pour l'objet x de type Dvector.

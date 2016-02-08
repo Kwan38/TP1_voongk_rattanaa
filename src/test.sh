@@ -28,5 +28,5 @@ echo "===== Fin du test lecture et affichage du test 1 donné par les professeur
 
 echo ""
 echo "===== Lecture et affichage du test 2 donné par les professeurs ====="
-#./test_lecture_fichier.t test2.txt
+./test_lecture_fichier.t test2.txt
 echo "===== Fin du test lecture et affichage du test 2 donné par les professeurs ====="
