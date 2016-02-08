@@ -50,9 +50,9 @@ Dvector::Dvector(const Dvector & D) {
 }
 
 /* --- Constructor by parsing a file --- */
-Dvector::Dvector( std::string monString){
+Dvector::Dvector( std::string inputFile){
     std::ifstream fichier;//(std::string, ios::in);//on ouvre le fichier en lecture
-    fichier.open(monString.c_str(),ifstream::in);
+    fichier.open(inputFile.c_str(),ifstream::in);
     if(fichier.is_open()){
         //Récuperer le nombre de ligne pour initialiser la taille du tableau
         int nombreLigne = 0; // on va garder en mémoire le nombre de ligne du fichier pour ensuite avoir la taille du vecteur
@@ -71,6 +71,7 @@ Dvector::Dvector( std::string monString){
         while(getline(fichier, s))  // tant que l'on peut mettre la ligne
         {
            pTab[i] = atof(s.c_str());
+            i++;
         }
     }else{
         taille = 0;
