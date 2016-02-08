@@ -4,7 +4,7 @@ CXX = g++
 CXXFLAGS = -Wall -Wextra -g
 
 
-.PHONY : all clean
+.PHONY : all clean check
 
 all : $(TESTS)
 
@@ -16,3 +16,6 @@ all : $(TESTS)
 
 clean : 
 	-rm -f *.o $(TESTS)
+
+check : 
+	./test.sh

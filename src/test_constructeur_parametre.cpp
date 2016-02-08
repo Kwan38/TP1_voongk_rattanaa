@@ -7,6 +7,13 @@
 #include <cassert>
 #include <sstream>
 
+/*!
+ * \file test_constructeur_parametre.cpp
+ * \brief Teste le constructeur avec parametre
+ * \author voongk-rattanaa
+ *
+ */
+
 using namespace std;
 
 int main(){
@@ -15,7 +22,7 @@ int main(){
     assert(d2.size() == 6);
     cout<<"Taille OK"<<endl;
     stringstream str;
-   d2.display(str );
+    d2.display(str );
     assert( str.str() == "0\n0\n0\n0\n0\n0\n" );
     cout<<"Contenu OK"<<endl;
     cout<<endl;

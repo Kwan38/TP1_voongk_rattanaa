@@ -1,4 +1,4 @@
-.PHONY : all doc clean
+.PHONY : all doc clean check
 
 all :
 	( cd src && $(MAKE) $@)
@@ -9,3 +9,6 @@ doc :
 clean : 
 	(cd src && $(MAKE) $@)
 	(cd docu && $(MAKE) $@)
+
+check :
+	(cd src && $(MAKE) $@)

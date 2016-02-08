@@ -6,6 +6,13 @@
 #include "Dvector.h"
 #include <cassert>
 
+/*!
+ * \file test_constructor_defaut.cpp
+ * \brief Teste le constructeur par défaut
+ * \author voongk-rattanaa
+ *
+ */
+
 using namespace std;
 
 int main(){

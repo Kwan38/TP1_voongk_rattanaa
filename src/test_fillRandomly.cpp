@@ -5,6 +5,13 @@
 #include <iostream>
 #include "Dvector.h"
 
+/*!
+ * \file test_fillRandomly.cpp
+ * \brief Teste le remplissage aléatoire d'un vecteur
+ * \author voongk-rattanaa
+ *
+ */
+
 using namespace std;
 
 int main(){
