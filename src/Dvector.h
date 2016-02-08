@@ -59,7 +59,7 @@ public:
     *
     *  Constructeur par copie de la classe Dvector
     *
-    *  \param &D : vecteur copié
+    *  \param D : vecteur copié
     */
 
     Dvector(const Dvector &D);
@@ -81,7 +81,7 @@ public:
      *
      * Affiche le vecteur
      *
-     * \param &str : flux sur lequel sera affiche le contenu du vecteur
+     * \param str : flux sur lequel sera affiche le contenu du vecteur
      */
     void display(std::ostream &str);
 
