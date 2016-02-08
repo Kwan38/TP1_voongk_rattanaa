@@ -73,6 +73,7 @@ Dvector::Dvector( std::string inputFile){
            pTab[i] = atof(s.c_str());
             i++;
         }
+        fichier.close();
     }else{
         taille = 0;
     }
