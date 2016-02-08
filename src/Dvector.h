@@ -26,7 +26,8 @@ class Dvector {
         ~Dvector();
         /* Constructor by paste */
         Dvector(const Dvector & D);
-
+        /*Constructor by parsing a file*/
+        Dvector ( std::string );
     /* Methods */
     void display(std::ostream& str);
     void fillRandomly();

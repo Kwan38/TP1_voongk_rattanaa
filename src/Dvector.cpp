@@ -5,6 +5,9 @@
 #include "Dvector.h"
 #include <iostream>
 #include <cstdlib>
+#include <fstream>
+#include <string>
+using namespace std;
 
 /* ===== CONSTRUCTORS ===== */
 
@@ -46,6 +49,34 @@ Dvector::Dvector(const Dvector & D) {
 
 }
 
+/* --- Constructor by parsing a file --- */
+Dvector::Dvector( std::string monString){
+    std::ifstream fichier;//(std::string, ios::in);//on ouvre le fichier en lecture
+    fichier.open(monString.c_str(),ifstream::in);
+;    if(fichier){
+        //Récuperer le nombre de ligne pour initialiser la taille du tableau
+        int nombreLigne = 0; // on va garder en mémoire le nombre de ligne du fichier pour ensuite avoir la taille du vecteur
+        string s;  // déclaration d'une chaîne qui contiendra la ligne lue
+        while(getline(fichier, s)){
+            nombreLigne++;
+        }
+        taille = nombreLigne; // on a la taile du vecteur
+        pTab = new double[taille];
+
+        //Prendre les données des lignes pour les rentrer en parametre du vecteur
+        //On retour en début de fichier
+        fichier.clear();
+        fichier.seekg(0, ios::beg);
+        int i = 0;
+        while(getline(fichier, s))  // tant que l'on peut mettre la ligne
+        {
+           pTab[i] = atof(s.c_str());
+        }
+    }else{
+        taille = 0;
+    }
+
+}
 /* ==== METHODS ====*/
 
 void Dvector::display(std::ostream &str) {
