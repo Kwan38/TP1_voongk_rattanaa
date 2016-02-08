@@ -90,6 +90,7 @@ Dvector::Dvector( std::string inputFile){
         fichier.close();
     }else{
         taille = 0;
+        pTab = new double[taille];
     }
     cout<<"On sort du constructeur de Dvector avec paramètre un fichier en lecture"<<endl;
 }
