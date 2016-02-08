@@ -14,4 +14,4 @@ $(PROG) : $(OBJS) $(PROG).o
 	$(CXX) $(CXXFLAGS) -c $<
 
 clean : 
-	-rm -f *.o
+	-rm -f *.o $(PROG)
