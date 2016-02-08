@@ -18,6 +18,8 @@ int main(){
     cout<<"On a un vecteur de taille "<<d4.size()<<endl;
     d4.display(cout);
     cout<<endl;
+
+
     return 0;
 }
 

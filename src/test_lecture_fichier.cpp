@@ -11,4 +11,5 @@ int main(int argc, char *argv[]){
     char *fichier = argv[1];
     Dvector d5 = Dvector(fichier);
     d5.display(cout);
+
 }

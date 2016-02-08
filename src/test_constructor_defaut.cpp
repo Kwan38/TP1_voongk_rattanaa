@@ -13,5 +13,6 @@ int main(){
     cout<<"On a un vecteur de taille "<<d1.size()<<endl;
     d1.display(cout);
     cout<<endl;
+
     return 0;
 }

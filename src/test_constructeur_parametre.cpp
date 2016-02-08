@@ -19,5 +19,6 @@ int main(){
     cout<<"On a un vecteur de taille "<<d3.size()<<endl;
     d3.display(cout);
     cout<<endl;
+
     return 0;
 }

@@ -12,4 +12,5 @@ int main(){
     Dvector d2 = Dvector(6);
     d2.fillRandomly();
     d2.display(cout);
+
 }
